@@ -1,0 +1,18 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://localhost:5173",
+      "localStorage": [
+        {
+          "name": "lofish_user",
+          "value": "{\"id\":\"ADMN001\",\"name\":\"Super Admin\",\"role\":\"ADMN\",\"username\":\"admin\",\"email\":\"admin@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"warehouse-edit\",\"profile\",\"supplier-edit\",\"stock-transfer-edit\",\"cat-app\",\"product\",\"warehouse\",\"cat-app-edit\",\"warehouse-delete\",\"product-edit\",\"permission-edit\",\"stock-opname\",\"has-permit\",\"stock-opname-edit\",\"has-permit-edit\",\"service\",\"price\",\"selling-edit\",\"so-detail-edit\",\"member\",\"purchase-edit\",\"reject\",\"member-edit\",\"so-detail\",\"grade\",\"price-edit\",\"profile-edit\",\"service-edit\",\"stock-edit\",\"size\",\"selling\",\"grade-edit\",\"stock\",\"permission\",\"config-edit\",\"config\",\"reject-edit\",\"user\",\"user-edit\",\"category-edit\",\"supplier\",\"role\",\"size-edit\",\"stock-transfer\",\"category\",\"purchase\",\"session\",\"role-edit\"]}"
+        },
+        {
+          "name": "lofish_token",
+          "value": "Bearer 5CCUmxpwqD10_P4i"
+        }
+      ]
+    }
+  ]
+}
