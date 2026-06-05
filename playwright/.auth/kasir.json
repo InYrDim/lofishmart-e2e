@@ -6,11 +6,11 @@
       "localStorage": [
         {
           "name": "lofish_user",
-          "value": "{\"id\":\"KSR001\",\"name\":\"Kasir 1\",\"role\":\"KSR\",\"username\":\"kasir1\",\"email\":\"kasir1@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"selling\",\"product\",\"selling-edit\"]}"
+          "value": "{\"id\":\"KSR001\",\"name\":\"Kasir 1\",\"role\":\"KSR\",\"username\":\"kasir1\",\"email\":\"kasir1@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"product\",\"selling-edit\",\"selling\"]}"
         },
         {
           "name": "lofish_token",
-          "value": "Bearer xmquplbysfJNxN5Z"
+          "value": "Bearer dIwnBSQZGAMF8OT6"
         }
       ]
     }

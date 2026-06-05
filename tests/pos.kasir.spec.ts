@@ -1,27 +1,55 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('POS Flow', () => {
-  test('User can open POS and see catalog', async ({ page }) => {
-    // 1. Go to POS page
+  test('User can open POS and see catalog with filters', async ({ page }) => {
     await page.goto('/pos');
 
-    // 2. Wait for loading to finish
+    // Wait for loading to finish
     await expect(page.getByText('Memuat produk...')).not.toBeVisible();
 
-    // 3. Verify header is present
+    // Verify header branding
     await expect(page.getByText('LoFISH MART')).toBeVisible();
 
-    // 4. Verify catalog is visible
-    // Based on the code, ProductCatalog should be rendered
-    const catalog = page.locator('.product-catalog'); // Check if this class exists or use a better selector
-    
-    // Let's try searching for a common word if we don't know the class
+    // Search input should be visible
     const searchInput = page.getByPlaceholder('Cari produk...');
     await expect(searchInput).toBeVisible();
-    
-    await searchInput.fill('Aqua'); // Sample product
-    
-    // 5. Verify results (if any)
-    // This depends on the seeded data
+
+    // Catalog filter buttons should be present
+    await expect(page.getByRole('button', { name: 'Semua' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Produk' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Layanan' })).toBeVisible();
+
+    // Cart sidebar should be present with empty state
+    await expect(page.getByText('Pesanan').first()).toBeVisible();
+    await expect(page.getByText('Belum ada pesanan')).toBeVisible();
+
+    // Search for a product
+    await searchInput.fill('Aqua');
+
+    // Verify the search input has the value
+    await expect(searchInput).toHaveValue('Aqua');
+  });
+
+  test('User can switch between catalog filters', async ({ page }) => {
+    await page.goto('/pos');
+
+    // Wait for loading
+    await expect(page.getByText('Memuat produk...')).not.toBeVisible();
+
+    // Click "Produk" filter tab
+    await page.getByRole('button', { name: 'Produk' }).click();
+
+    // Click "Layanan" filter tab
+    await page.getByRole('button', { name: 'Layanan' }).click();
+
+    // Click "Semua" to go back to all
+    await page.getByRole('button', { name: 'Semua' }).click();
+
+    // Grade and size filters should be visible
+    await expect(page.getByText('Semua Grade').first()).toBeVisible();
+    await expect(page.getByText('Semua Ukuran').first()).toBeVisible();
+
+    // Availability toggle should be visible
+    await expect(page.getByText('Tersedia Saja')).toBeVisible();
   });
 });

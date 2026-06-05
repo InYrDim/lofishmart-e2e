@@ -5,7 +5,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  workers: 1,
   reporter: 'html',
   use: {
     baseURL: 'http://localhost:5173',
@@ -21,6 +21,7 @@ export default defineConfig({
       use: { 
         ...devices['Desktop Chrome'],
         storageState: 'playwright/.auth/admin.json',
+        launchOptions: { slowMo: 500 },
       },
       dependencies: ['setup'],
     },
@@ -30,6 +31,7 @@ export default defineConfig({
       use: { 
         ...devices['Desktop Chrome'],
         storageState: 'playwright/.auth/kasir.json',
+        launchOptions: { slowMo: 500 },
       },
       dependencies: ['setup'],
     },
@@ -39,6 +41,7 @@ export default defineConfig({
       use: { 
         ...devices['Desktop Chrome'],
         storageState: 'playwright/.auth/gudang.json',
+        launchOptions: { slowMo: 500 },
       },
       dependencies: ['setup'],
     },
@@ -48,7 +51,7 @@ export default defineConfig({
     {
       command: 'npm run start',
       cwd: '../lofishmart-backend',
-      url: 'http://localhost:3000/api',
+      url: 'http://localhost:3030/api',
       reuseExistingServer: true,
     },
     {
