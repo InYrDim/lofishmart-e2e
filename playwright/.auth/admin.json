@@ -6,11 +6,11 @@
       "localStorage": [
         {
           "name": "lofish_user",
-          "value": "{\"id\":\"ADMN001\",\"name\":\"Super Admin\",\"role\":\"ADMN\",\"username\":\"admin\",\"email\":\"admin@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"session\",\"user\",\"user-edit\",\"warehouse\",\"stock-transfer-edit\",\"supplier-edit\",\"size-edit\",\"has-permit-edit\",\"stock\",\"role\",\"warehouse-delete\",\"selling\",\"member\",\"purchase\",\"manage_users\",\"manage_products\",\"manage_stock\",\"pos_access\",\"view_reports\",\"so-detail-edit\",\"config-edit\",\"cat-app-edit\",\"purchase-edit\",\"grade-edit\",\"selling-edit\",\"profile\",\"product\",\"service-edit\",\"cat-app\",\"permission\",\"config\",\"reject\",\"permission-edit\",\"has-permit\",\"stock-opname\",\"supplier\",\"profile-edit\",\"stock-transfer\",\"service\",\"product-edit\",\"category-edit\",\"member-edit\",\"reject-edit\",\"so-detail\",\"warehouse-edit\",\"category\",\"role-edit\",\"size\",\"price-edit\",\"grade\",\"stock-opname-edit\",\"stock-edit\",\"price\"]}"
+          "value": "{\"id\":\"ADMN001\",\"name\":\"Super Admin\",\"role\":\"ADMN\",\"username\":\"admin\",\"email\":\"admin@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"cat-app-edit\",\"profile-edit\",\"stock-edit\",\"size\",\"warehouse\",\"user\",\"service-edit\",\"grade\",\"role\",\"profile\",\"stock-opname-edit\",\"price\",\"has-permit\",\"stock-transfer-edit\",\"reject\",\"product-edit\",\"session\",\"manage_users\",\"manage_products\",\"manage_stock\",\"pos_access\",\"view_reports\",\"service\",\"stock-opname\",\"has-permit-edit\",\"role-edit\",\"supplier-edit\",\"stock-transfer\",\"permission-edit\",\"product\",\"warehouse-delete\",\"stock\",\"size-edit\",\"supplier\",\"member-edit\",\"reject-edit\",\"member\",\"config\",\"config-edit\",\"selling-edit\",\"category-edit\",\"warehouse-edit\",\"category\",\"purchase\",\"selling\",\"user-edit\",\"so-detail-edit\",\"permission\",\"purchase-edit\",\"cat-app\",\"grade-edit\",\"price-edit\",\"so-detail\"]}"
         },
         {
           "name": "lofish_token",
-          "value": "Bearer blD8UPmF3_gaEQuJ"
+          "value": "Bearer gAf0AQYK5XjuTOur"
         }
       ]
     }

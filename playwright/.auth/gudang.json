@@ -6,11 +6,11 @@
       "localStorage": [
         {
           "name": "lofish_user",
-          "value": "{\"id\":\"GDNG001\",\"name\":\"Petugas Gudang 1\",\"role\":\"GDNG\",\"username\":\"gudang1\",\"email\":\"gudang1@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"stock-transfer-edit\",\"stock-transfer\"]}"
+          "value": "{\"id\":\"GDNG001\",\"name\":\"Petugas Gudang 1\",\"role\":\"GDNG\",\"username\":\"gudang1\",\"email\":\"gudang1@lofish.market\",\"image\":null,\"market_id\":null,\"market\":null,\"login\":true,\"hasPermit\":[\"stock-transfer\",\"stock-transfer-edit\"]}"
         },
         {
           "name": "lofish_token",
-          "value": "Bearer 268QDjuwiT6fkZUu"
+          "value": "Bearer LFZRIQ1pVqRQgEKI"
         }
       ]
     }

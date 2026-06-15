@@ -190,7 +190,7 @@ test.describe('Admin Product CRUD', () => {
     await page.getByRole('button', { name: 'Arsipkan' }).last().click();
 
     // Wait for archive to complete
-    await expect(page.getByText('Arsipkan Produk')).not.toBeVisible({ timeout: 10000 });
+    await expect(archiveModal).not.toBeVisible({ timeout: 10000 });
 
     // Verify product shows archived status
     await expect(productRow.getByText('Diarsipkan')).toBeVisible({ timeout: 10000 });
